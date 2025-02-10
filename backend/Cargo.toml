@@ -1,0 +1,9 @@
+[package]
+name = "bar_perros"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hyper = { version = "1.6.0", features = ["server"] }
+leptos = "0.7.5"
+tokio = "1.43.0"
