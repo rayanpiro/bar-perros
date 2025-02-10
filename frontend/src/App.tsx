@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Button } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,7 +18,13 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <Button variant="primary">Test</Button>
+      <Card style={{width: '18rem'}}>
+
+        <Card.Body>
+          <Card.Title>Probando Fanta naraja</Card.Title>
+        </Card.Body>
+        <Button variant="primary">Añadir</Button>
+      </Card>
       <div className="card">
         <button className=".button" onClick={() => setCount((count) => count + 1)}>
           count is {count}
